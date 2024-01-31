@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/* CSS */
+.button {
+  --b: 3px;
+  /* border thickness */
+  --s: .45em;
+  /* size of the corner */
+  --color: #373B44;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover,
+.button:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+/* Navbar2 nav item  */
+.nav .item:hover {
+  color: rgb(180, 140, 32);
+}
+
+/* side bar */
+
+.sidebar {
+  background-color: white;
+  background-image: url(./Components/images/dot-pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-icon {
+  transition: all 0.3s ease;
+}
+
+.sidebar-icon:hover {
+  animation: zoomInOut 0.5s ease alternate;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Home page button slide annimation */
+
+.home {
+  height: 130vh;
+}
+
+.card-hover {
+
+  height: 360px;
+ 
+}
+
+
+.zoom {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover .zoom {
+  animation: zoomOut 0.5s ease forwards;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.card-hover:hover {
+  background: black;
+  background-image: url('./Components/images/home4.jpg');
+  opacity: 0.9; 
+}
+
+
+.card-hover:hover h1 {
+  transition: color 0.5s ease;
+  color: rgb(200, 171, 53);
+}
+
+.card-hover:hover h2,
+.card-hover:hover p {
+  transition: color 0.5s ease;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* About company */
+
+.aboutcompany{
+  height: 100vh;
+  background-image: url('./Components/images/home2.jpg');   
+  background-size: cover;
+  background-position: center top 50vh; /* Display from top to bottom 50vh */
+  overflow: hidden; /* Hide the remaining portion */
+  display: flex; /* Ensure container properly wraps its content */
+  flex-direction: column;
+  background-repeat: no-repeat
+}   
