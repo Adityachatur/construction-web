@@ -46,7 +46,7 @@ const Projectnumbers = () => {
                     <div className="flex">
                         <img src={building} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
                         <div className='flex flex-col'>
-                            <p className="mt-5  text-5xl font-bold font-Montserrat cursor-pointer">
+                            <p className="mt-5 lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 500
                             </p> <span className='text-lg'>Project Done.</span>
                         </div>
@@ -58,7 +58,7 @@ const Projectnumbers = () => {
                     <div className="flex">
                         <img src={building} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
                         <div className='flex flex-col'>
-                            <p className="mt-5  text-5xl font-bold font-Montserrat cursor-pointer">
+                            <p className="mt-5  lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 500
                             </p> <span className='text-lg'>Project Done.</span>
                         </div>
@@ -69,7 +69,7 @@ const Projectnumbers = () => {
                     <div className="flex">
                         <img src={building} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
                         <div className='flex flex-col'>
-                            <p className="mt-5  text-5xl font-bold font-Montserrat cursor-pointer">
+                            <p className="mt-5  lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 500
                             </p> <span className='text-lg'>Project Done.</span>
                         </div>
@@ -79,7 +79,7 @@ const Projectnumbers = () => {
                     <div className="flex">
                         <img src={building} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
                         <div className='flex flex-col'>
-                            <p className="mt-5  text-5xl font-bold font-Montserrat cursor-pointer">
+                            <p className="mt-5  lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 500
                             </p> <span className='text-lg'>Project Done.</span>
                         </div>
