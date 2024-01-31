@@ -124,16 +124,7 @@
 
 /* About company */
 
-.aboutcompany {
-  height: 140vh;
-  background-image: url('./Components/images/home2.jpg');
-  background-size: cover;
-  background-position: center top 50vh;
-  /* Display from top to bottom 50vh */
-  overflow: hidden;
-  /* Hide the remaining portion */
-  display: flex;
-  /* Ensure container properly wraps its content */
-  flex-direction: column;
-  background-repeat: no-repeat
+.polygon-background {
+  clip-path: polygon(0.53% 63.52%, 100% 15%, 100% 100%, 0.33% 100.23%);
+  z-index: -1;
 }
