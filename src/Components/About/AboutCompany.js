@@ -41,7 +41,7 @@ const AboutCompany = () => {
             <Projectnumbers />
 
             {/* Polygon Background */}
-            <div className="absolute top-0 left-0 w-full h-full polygon-background"style={{ backgroundImage: `url(${img2})` }}></div>
+            <div className="absolute top-0 left-0 w-full h-full polygon-background-AboutCompany"style={{ backgroundImage: `url(${img2})` }}></div>
         </div>
     );
 };
