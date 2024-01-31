@@ -20,13 +20,12 @@ const Founderdetail = () => {
           <h1 className='text-4xl font-bold  md:text-left'><span className='text-xl'>We will provide  </span>you  the best <br /> work which you dreamt for!</h1>
           <p className="pt-4 text-xl leading-8 sm:text-left">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.there are many variations of passages of Ipsum available,</p>
 
-         <div className='mt-5 space-y-2 text-xl sm:text-left'>
-           <FontAwesomeIcon icon={faGreaterThan}/> Construction Management <br />
-           <FontAwesomeIcon icon={faGreaterThan}/> Pre Construction Services <br />
-           <FontAwesomeIcon icon={faGreaterThan}/> Contract Administration <br />
-         </div>
+          <div className='mt-5 space-y-2 lg:text-2xl sm:text-md sm:text-left'>
+            <FontAwesomeIcon icon={faGreaterThan} /> <span className='hover:text-yellow-400 transition-colors duration-400'>Construction Management</span> <br />
+            <FontAwesomeIcon icon={faGreaterThan} /> <span className='hover:text-yellow-400 transition-colors duration-400'>Pre Construction Services</span> <br />
+            <FontAwesomeIcon icon={faGreaterThan} /> <span className='hover:text-yellow-400 transition-colors duration-400'>Contract Administration</span> <br />
+          </div>
         </div>
-
       </div>
     </div>
   )

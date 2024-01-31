@@ -5,6 +5,7 @@ import img3 from '../images/home4.jpg';
 import Card from './Card';
 import AboutCompany from '../About/AboutCompany';
 import Founderdetail from '../Founder/Founderdetail';
+import Contactus from '../Contact/Contactus';
 
 const images = [img1, img2, img3];
 
@@ -39,6 +40,7 @@ const Home = () => {
             <Card />
             <AboutCompany />
             <Founderdetail />
+            <Contactus/>
         </div>
     );
 };
