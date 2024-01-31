@@ -3,6 +3,7 @@ import img1 from '../images/home4.jpg';
 import img2 from '../images/home2.jpg';
 import img3 from '../images/home3.jpg';
 import Projectnumbers from './Projectnumbers';
+import Heading from '../Heading';
 
 const AboutCompany = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -18,10 +19,7 @@ const AboutCompany = () => {
 
     return (
         <div className=' aboutcompany w-full my-4  md:px-0 relative'>
-            <div className='w-full'>
-                <h1 className='lg:py-20 lg:pl-32 p-4 w-full text-3xl font-bold'><span className='text-yellow-500'>ABOUT</span> COMPANY</h1>
-            </div>
-
+            <Heading about="About" company="Company"/>
             <div className='relative flex flex-wrap z-10'>
                 <div className="lg:w-8/12 w-full h-auto flex justify-center lg:justify-end">
                     <img src={images[currentImageIndex]} className="object-cover h-auto w-full lg:w-auto" style={{ maxHeight: "420px" }} alt="" />
@@ -41,7 +39,7 @@ const AboutCompany = () => {
             <Projectnumbers />
 
             {/* Polygon Background */}
-            <div className="absolute top-0 left-0 w-full h-full polygon-background-AboutCompany"style={{ backgroundImage: `url(${img2})` }}></div>
+            <div className="absolute top-0 left-0 w-full h-full polygon-background-AboutCompany" style={{ backgroundImage: `url(${img2})` }}></div>
         </div>
     );
 };

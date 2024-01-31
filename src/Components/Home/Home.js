@@ -6,6 +6,8 @@ import Card from './Card';
 import AboutCompany from '../About/AboutCompany';
 import Founderdetail from '../Founder/Founderdetail';
 import Contactus from '../Contact/Contactus';
+import OurService from '../Service/OurService';
+import OurTeam from '../Service/OurTeam';
 
 const images = [img1, img2, img3];
 
@@ -40,7 +42,9 @@ const Home = () => {
             <Card />
             <AboutCompany />
             <Founderdetail />
-            <Contactus/>
+            <Contactus />
+            <OurService />
+            <OurTeam/>
         </div>
     );
 };

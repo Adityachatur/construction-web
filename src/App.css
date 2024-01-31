@@ -175,3 +175,16 @@
   transition: color 0.5s ease-in-out;
   /* Smooth transition for placeholder */
 }
+
+
+/* our service */
+
+.service-cardhover:hover .zoom{
+  animation: zoomOut 0.5s ease forwards;
+}
+
+
+.service-cardhover:hover h3{
+  transition: color 0.5s ease;
+  color: rgb(200, 171, 53);
+}
