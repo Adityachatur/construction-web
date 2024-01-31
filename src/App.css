@@ -81,7 +81,7 @@
 .card-hover {
 
   height: 360px;
- 
+
 }
 
 
@@ -106,7 +106,7 @@
 .card-hover:hover {
   background: black;
   background-image: url('./Components/images/home4.jpg');
-  opacity: 0.9; 
+  opacity: 0.9;
 }
 
 
@@ -124,13 +124,16 @@
 
 /* About company */
 
-.aboutcompany{
-  height: 100vh;
-  background-image: url('./Components/images/home2.jpg');   
+.aboutcompany {
+  height: 120vh;
+  background-image: url('./Components/images/home2.jpg');
   background-size: cover;
-  background-position: center top 50vh; /* Display from top to bottom 50vh */
-  overflow: hidden; /* Hide the remaining portion */
-  display: flex; /* Ensure container properly wraps its content */
+  background-position: center top 50vh;
+  /* Display from top to bottom 50vh */
+  overflow: hidden;
+  /* Hide the remaining portion */
+  display: flex;
+  /* Ensure container properly wraps its content */
   flex-direction: column;
   background-repeat: no-repeat
-}   
+}
