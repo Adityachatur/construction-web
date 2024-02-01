@@ -8,15 +8,17 @@ import trainer4 from '../images/home3.jpg';
 import trainer5 from '../images/home4.jpg';
 import trainer7 from '../images/home3.jpg';
 import Heading from '../Heading';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGoogle, faInstagram, faLinkedin, faTwitter, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 
-import backgroundImage from '../images/OurTeambackgroundimg.jpg'
+import backgroundImage from '../images/dot-pattern.png'
 const OurTeam = () => {
     const cardData = [
-        { imageUrl: trainer1, name: 'Trainer 1' },
-        { imageUrl: trainer2, name: 'Trainer 2' },
-        { imageUrl: trainer4, name: 'Trainer 3' },
-        { imageUrl: trainer5, name: 'Trainer 4' },
-        { imageUrl: trainer7, name: 'Trainer 5' },
+        { imageUrl: trainer1, name: 'Avie Beaton ', position: 'Ceo & Architect' },
+        { imageUrl: trainer2, name: 'Ben Jonson', position: 'Architect' },
+        { imageUrl: trainer4, name: 'Ashley Fletcher', position: 'Finances' },
+        { imageUrl: trainer5, name: 'Gabriela Flores', position: 'Mechanical Engineer' },
+        { imageUrl: trainer7, name: 'dany pandit ', position: 'presentation' },
         // Add more image URLs and names as needed
     ];
 
@@ -56,38 +58,50 @@ const OurTeam = () => {
             <div className='w-full' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '450px', }}>
                 <div className='text-center my-5'>
                     <Heading about="Our" company="Team" />
+                    <h1 className='text-5xl font-bold pb-2'>Discover trust team and our experts</h1>
                 </div>
 
 
                 <div className='w-10/12 mx-auto'>
-                <Slider {...settings}>
-                    {cardData.map((item, index) => (
-                        <div
-                            key={index}
-                            className="relative"
-                            onMouseEnter={() => setHoveredIndex(index)}
-                            onMouseLeave={() => setHoveredIndex(null)}
-                        >
-                            <div className="mx-3 h-1/5 shadow-md">
-                                <img src={item.imageUrl} alt={`Team Member ${index + 1}`} className="w-full h-2/5 object-cover" />
-                            </div>
-                            {hoveredIndex === index && (
-                                <div
-                                    className="absolute bottom-0 left-0 right-0 bg-black text-center py-3 mx-3 border-t-4 border-gray-700 "
-                                    style={slideInAnimation}
-                                >
-                                    <p className="text-xl text-white font-semibold mt-7 font-Oswald"> {item.name} </p> <br /> <p className='text-white text-base font-Roboto'>GYM TRAINER</p>
+                    <Slider {...settings}>
+                        {cardData.map((item, index) => (
+                            <div
+                                key={index}
+                                className="relative"
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                <div className="mx-3 h-1/5 shadow-md bg-red-800 ">
+                                    <img src={item.imageUrl} alt={`Team Member ${index + 1}`} className="w-full h-2/5 object-cover" />
                                 </div>
-                            )}
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+
+                                {hoveredIndex === index && (
+                                    <div
+                                        className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-65 text-center py-3 mx-3 border-t-4 border-gray-700 "
+                                        style={slideInAnimation}
+                                    >
+                                        <p className="text-2xl text-white font-semibold mt-7 font-Oswald"> {item.name} </p>
+                                        <p className="text-lg text-white font-semibold mt-1 font-Oswald"> {item.position} </p> <br />
+                                        <p className='text-white text-base font-Roboto space-x-2'>
+                                            <FontAwesomeIcon icon={faFacebook} className='bg-gray-800 p-1 h-6 rounded-md hover:bg-blue-500 hover:text-white' />
+                                            <FontAwesomeIcon icon={faInstagram} className='bg-gray-800 h-6 p-1 rounded-md hover:bg-red-500 hover:text-white' />
+                                            <FontAwesomeIcon icon={faTwitter} className='bg-gray-800 h-6 p-1 rounded-md hover:text-white hover:bg-blue-500' />
+                                            <FontAwesomeIcon icon={faYoutubeSquare} className='bg-gray-800 h-6 p-1 rounded-md hover:bg-red-500 hover:text-white' />
+                                            <FontAwesomeIcon icon={faLinkedin} className='bg-gray-800 h-6 p-1 rounded-md hover:text-white hover:bg-blue-700' />
+                                            <FontAwesomeIcon icon={faGoogle} className='bg-gray-800 h-6 p-1 rounded-md hover:bg-blue-300 hover:text-white' />
+
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
 
 
 
             </div>
-           
+
 
         </div>
     );

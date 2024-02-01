@@ -8,6 +8,7 @@ import Founderdetail from '../Founder/Founderdetail';
 import Contactus from '../Contact/Contactus';
 import OurService from '../Service/OurService';
 import OurTeam from '../Service/OurTeam';
+import OurPrice from '../Service/OurPrice';
 
 const images = [img1, img2, img3];
 
@@ -45,6 +46,7 @@ const Home = () => {
             <Contactus />
             <OurService />
             <OurTeam/>
+            <OurPrice/>
         </div>
     );
 };

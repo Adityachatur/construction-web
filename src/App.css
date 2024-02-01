@@ -179,12 +179,33 @@
 
 /* our service */
 
-.service-cardhover:hover .zoom{
+.service-cardhover:hover .zoom {
   animation: zoomOut 0.5s ease forwards;
 }
 
 
-.service-cardhover:hover h3{
+.service-cardhover:hover h3 {
   transition: color 0.5s ease;
   color: rgb(200, 171, 53);
+}
+
+/* out team */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+/* Plan card service */
+
+.plancard:hover {
+  border-top: 2px solid yellow;
+  transition: color 0.5s ease;
+  color: rgb(200, 171, 53);
+  box-shadow: 1px 1px 20px black;
 }
