@@ -32,16 +32,16 @@ const OurPrice = () => {
 
     return (
         <div>
-            <div className='w-full' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', height: '600px' }}>
+            <div className='w-full' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', minHeight: '600px' }}>
                 <div className='text-center my-5'>
                     <Heading about="Our" company="Price" />
-                    <h1 className='text-5xl font-bold pb-2'>Discover trust team and our experts</h1>
+                    <h1 className='lg:text-5xl md:text-2xl text-xl font-bold pb-2'>Discover trust team and our experts</h1>
                 </div>
 
-                <div className='w-10/12 mx-auto flex flex-wrap justify-center'>
+                <div className='w-full px-4 flex flex-wrap justify-center'>
                     {plandata.map((item, index) => (
-                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
-                            <div className="bg-white border border-gray-300  rounded-lg plancard my-3 space-y-5 text-lg py-8 px-5 font-bold text-center">
+                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4 p-4">
+                            <div className="bg-white border border-gray-300 rounded-lg plancard my-3 space-y-5 text-lg py-8 px-5 font-bold text-center">
                                 <h2 className="text-2xl font-bold mb-2">{item.plan}</h2>
                                 <p className="text-gray-600 text-2xl">{item.rate}</p>
                                 <p className="text-gray-600 text-2xl">{item.duration}</p>

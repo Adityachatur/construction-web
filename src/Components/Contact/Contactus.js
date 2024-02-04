@@ -12,24 +12,24 @@ const Contactus = () => {
 
                         <div className='text-white'>
                             <label htmlFor="" className='text-2xl'>Enter Name</label> <br />
-                            <input type="text" placeholder="Name" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white text-xl placeholder-white focus:border-black input-effect' />
+                            <input type="text" placeholder="Name" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white lg:text-xl  text-md placeholder-white focus:border-black input-effect' />
                         </div>
                         <br />
 
 
                         <div className='text-white'>
                             <label htmlFor="" className='text-2xl'>Enter Email</label> <br />
-                            <input type="text" placeholder="Email" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white text-xl placeholder-white focus:border-black input-effect' />
+                            <input type="text" placeholder="Email" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white lg:text-xl  text-md placeholder-white focus:border-black input-effect' />
                         </div>
                         <br />
                         <div className='text-white'>
                             <label htmlFor="" className='text-2xl'>Enter Phone</label> <br />
-                            <input type="text" placeholder="Phone" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white text-xl placeholder-white focus:border-black input-effect' />
+                            <input type="text" placeholder="Phone" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white lg:text-xl   text-md placeholder-white focus:border-black input-effect' />
                         </div>
                         <br />
                         <div className='text-white'>
                             <label htmlFor="" className='text-2xl'>Enter Comment</label> <br />
-                            <input type="text" placeholder="Comment" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white text-xl placeholder-white focus:border-black input-effect' />
+                            <input type="text" placeholder="Comment" className='w-full md:w-10/12 h-10 bg-black border-b-2 text-white lg:text-xl  text-md placeholder-white focus:border-black input-effect' />
                         </div>
                         <br />
 

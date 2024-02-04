@@ -209,3 +209,11 @@
   color: rgb(200, 171, 53);
   box-shadow: 1px 1px 20px black;
 }
+
+/* Footer */
+
+.footer-list:hover span {
+  color: yellow;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}

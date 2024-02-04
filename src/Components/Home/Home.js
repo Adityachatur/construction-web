@@ -9,6 +9,7 @@ import Contactus from '../Contact/Contactus';
 import OurService from '../Service/OurService';
 import OurTeam from '../Service/OurTeam';
 import OurPrice from '../Service/OurPrice';
+import Footer from '../Footer/Footer';
 
 const images = [img1, img2, img3];
 
@@ -47,6 +48,7 @@ const Home = () => {
             <OurService />
             <OurTeam />
             <OurPrice />
+            <Footer />
 
         </div>
     );
