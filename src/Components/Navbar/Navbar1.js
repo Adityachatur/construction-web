@@ -20,7 +20,7 @@ const Navbar1 = () => {
                         <FontAwesomeIcon icon={faPhone} className='h-8 my-6 mx-4 text-yellow-500 ' />
                         <p className='mt-5 lg:text-sm text-base font-Montserrat cursor-pointer '>+91 9552314201<br />mon - firday : 8 AM - 9 PM</p>
                     </div>
-                    <div className="flex h-12 my-auto">
+                    <div className="flex  my-auto">
                         <button className='button'>home</button>
                     </div>
                 </div>

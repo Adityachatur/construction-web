@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import trainer1 from '../images/home1.jpg';
-import trainer2 from '../images/home2.jpg';
-import trainer4 from '../images/home3.jpg';
-import trainer5 from '../images/home4.jpg';
-import trainer7 from '../images/home3.jpg';
-import Heading from '../Heading';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faInstagram, faLinkedin, faTwitter, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import backgroundImage from '../images/dot-pattern.png';
+import Heading from '../Heading';
 
-import backgroundImage from '../images/dot-pattern.png'
+import trainer1 from '../images/teamperson1.jpg';
+import trainer2 from '../images/Teamperson2.jpg';
+import trainer3 from '../images/Teamperson3.jpg'; // Corrected image import
+import trainer4 from '../images/Teamperson4.jpg';
+import trainer5 from '../images/Teamperson5.jpg'; // Corrected image import
+
 const OurTeam = () => {
     const cardData = [
-        { imageUrl: trainer1, name: 'Avie Beaton ', position: 'Ceo & Architect' },
+        { imageUrl: trainer1, name: 'Avie Beaton', position: 'CEO & Architect' },
         { imageUrl: trainer2, name: 'Ben Jonson', position: 'Architect' },
-        { imageUrl: trainer4, name: 'Ashley Fletcher', position: 'Finances' },
-        { imageUrl: trainer5, name: 'Gabriela Flores', position: 'Mechanical Engineer' },
-        { imageUrl: trainer7, name: 'dany pandit ', position: 'presentation' },
-        // Add more image URLs and names as needed
+        { imageUrl: trainer3, name: 'Ashley Fletcher', position: 'Finances' },
+        { imageUrl: trainer4, name: 'Gabriela Flores', position: 'Mechanical Engineer' },
+        { imageUrl: trainer5, name: 'Dany Pandit', position: 'Presentation' }, // Corrected name and position
     ];
 
     const settings = {
@@ -49,18 +49,19 @@ const OurTeam = () => {
     };
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
+
     const slideInAnimation = {
         animation: 'slideIn 0.3s ease-in-out forwards',
-        height: '150px' // Define animation
+        height: '150px'
     };
+
     return (
         <div className='my-16'>
             <div className='w-full' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '450px', }}>
                 <div className='text-center my-5'>
                     <Heading about="Our" company="Team" />
-                    <h1 className='text-5xl font-bold pb-2'>Discover trust team and our experts</h1>
+                    <h1 className='text-5xl font-bold pb-2'>Discover our trustworthy team and experts</h1> {/* Edited heading */}
                 </div>
-
 
                 <div className='w-10/12 mx-auto'>
                     <Slider {...settings}>
@@ -71,8 +72,8 @@ const OurTeam = () => {
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
-                                <div className="mx-3 h-1/5 shadow-md bg-red-800 ">
-                                    <img src={item.imageUrl} alt={`Team Member ${index + 1}`} className="w-full h-2/5 object-cover" />
+                                <div className="mx-3 shadow-md bg-red-800 ">
+                                    <img src={item.imageUrl} alt={`Team Member ${index + 1}`} className="w-full object-cover" />
                                 </div>
 
                                 {hoveredIndex === index && (
@@ -89,7 +90,6 @@ const OurTeam = () => {
                                             <FontAwesomeIcon icon={faYoutubeSquare} className='bg-gray-800 h-6 p-1 rounded-md hover:bg-red-500 hover:text-white' />
                                             <FontAwesomeIcon icon={faLinkedin} className='bg-gray-800 h-6 p-1 rounded-md hover:text-white hover:bg-blue-700' />
                                             <FontAwesomeIcon icon={faGoogle} className='bg-gray-800 h-6 p-1 rounded-md hover:bg-blue-300 hover:text-white' />
-
                                         </p>
                                     </div>
                                 )}
@@ -97,19 +97,9 @@ const OurTeam = () => {
                         ))}
                     </Slider>
                 </div>
-
-
-
             </div>
-
-
         </div>
     );
 };
 
 export default OurTeam;
-
-
-
-
-

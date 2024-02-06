@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationDot, faPhone, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faGoogle, faInstagram, faLinkedin, faTwitter, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
-
+import { Link, useLocation } from 'react-router-dom';
 const Sidebar = ({ showSidebar, toggleSidebar }) => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+
+    }, [location])
 
     return (
         <div>
@@ -14,20 +20,28 @@ const Sidebar = ({ showSidebar, toggleSidebar }) => {
                         <FontAwesomeIcon icon={faTimes} className="text-black cursor-pointer text-2xl hover:text-yellow-500 transition-colors duration-200" onClick={toggleSidebar} />
                     </div>
                     <div className='text-center my-32'>
+                        <div className='list-none space-y-4 mb-3 text-xl font-bold text-left'>
+                            <li className='menu-item'><Link to={'/'} className={`nav-link  ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></li>
+                            <li className='menu-item'><Link to={'/about'} className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></li>
+                            <li className='menu-item'>Services</li>
+                            <li className='menu-item'>Pages</li>
+                            <li className='menu-item'>Projects</li>
+                            <li className='menu-item'>Contact</li>
+                        </div>
                         <div className='sidebar-icon'>
-                            <FontAwesomeIcon icon={faPhone}  /> <br />
+                            <FontAwesomeIcon icon={faPhone} /> <br />
                             <h2>Phone Number</h2>
                             <h3>+91 9552314201</h3>
                         </div>
                         <br /><br />
                         <div className='sidebar-icon'>
-                            <FontAwesomeIcon icon={faEnvelope}  /> <br />
+                            <FontAwesomeIcon icon={faEnvelope} /> <br />
                             <h2>Email Address</h2>
                             <h3>Adityachatur7996@gmail.com</h3>
                         </div>
                         <br /><br />
                         <div className='sidebar-icon'>
-                            <FontAwesomeIcon icon={faLocationDot}  /> <br />
+                            <FontAwesomeIcon icon={faLocationDot} /> <br />
                             <h2>Location</h2>
                             <h3>Chakan , Pune 410501</h3>
                         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import img1 from '../images/home1.jpg';
+import img1 from '../images/home4.jpg';
 import img2 from '../images/home2.jpg';
-import img3 from '../images/home4.jpg';
+import img3 from '../images/home5.jpg';
 import Card from './Card';
 import AboutCompany from '../About/AboutCompany';
 import Founderdetail from '../Founder/Founderdetail';

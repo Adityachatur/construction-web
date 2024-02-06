@@ -1,7 +1,8 @@
 import { faGreaterThan, faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Sidebar from './Sidebar'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar2 = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,20 +15,25 @@ const Navbar2 = () => {
   const togglesidebar = () => {
     setShowSidebar(!showSidebar);
   }
+  let location = useLocation();
+  useEffect(() => {
+
+  }, [location])
+
 
   return (
     <>
       <div className='container sticky top-0 z-50 flex justify-between items-center p-2 bg-black w-full md:w-8/12 mx-auto'>
 
         {/* Menu icon */}
-        <div className="menu-icon text-white md:hidden" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
+        <div className="menu-icon text-white md:hidden" onClick={togglesidebar}>
+          <FontAwesomeIcon icon={showSidebar ? faTimes : faBars} />
         </div>
 
         {/* Navigation menu */}
-        <div className={`menu-items nav md:flex md:flex-row text-white font-bold lg:text-lg sm:text-base space-x-5 ${showMenu ? 'flex flex-col' : 'hidden'}`}>
-          <span className="item">Home</span>
-          <span className="item">About Us</span>
+        <div className={`menu-items nav md:flex md:flex-row text-white font-bold lg:text-lg sm:text-base space-x-5 ${showMenu ? 'text-base flex' : 'hidden'}`}>
+          <span className="item"><Link to={'/'} className={`nav-link  ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></span>
+          <span className="item"><Link to={'/about'} className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></span>
           <span className="item">Service</span>
           <span className="item">Pages</span>
           <span className="item">Projects</span>

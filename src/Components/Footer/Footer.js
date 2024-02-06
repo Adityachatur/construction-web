@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../images/logo.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGoogle, faInstagram, faLinkedin, faTwitter, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -37,9 +38,9 @@ const Footer = () => {
                 <div className='w-full md:w-1/2 lg:w-1/3 mt-10 mb-5 text-white text-center md:text-left pl-5 lg:pl-20'>
                     <h1 className='text-3xl font-bold'>Useful Links</h1>
                     <div className='list-none space-y-4 mt-4 text-xl'>
-                        <li className='footer-list'><span>Home</span></li>
+                        <li className='footer-list'><span><Link to={'/'}>Home</Link></span></li>
                         <hr className='border-dashed' />
-                        <li className='footer-list'><span>About</span></li>
+                        <li className='footer-list'><span><Link  to={'/about'}>About</Link></span></li>
                         <hr className='border-dashed' />
                         <li className='footer-list'><span>Contact</span></li>
                         <hr className='border-dashed' />

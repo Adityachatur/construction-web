@@ -1,17 +1,17 @@
 import React from 'react';
-import building from '../images/building.png';
+import building from '../images/building.jpeg';
 import crane from '../images/card-crane.png';
-import brush from '../images/brush.png';
-import happyclient from '../images/happy-client.png'
+import brush from '../images/brush.jpeg';
+import happyclient from '../images/Happy-client.jpeg'
 const Projectnumbers = () => {
     return (
         <>
 
-            <div className='flex flex-wrap justify-evenly mt-10' >
+            <div className='flex flex-wrap justify-evenly mt-10 text-white' >
 
                 <div className='lg:w-56  h-auto mt-2 mx-2'>
                     <div className="flex">
-                        <img src={building} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
+                        <img src={building} alt='' className="text-yellow-500 h-16 my-6 mx-2" />
                         <div className='flex flex-col'>
                             <p className="mt-5 lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 500
@@ -21,7 +21,7 @@ const Projectnumbers = () => {
                 </div>
                 <div className='w-56 h-auto mt-2 mx-2'>
                     <div className="flex">
-                        <img src={happyclient} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
+                        <img src={happyclient} alt='' className="text-yellow-500 h-16 my-6 mx-2" />
                         <div className='flex flex-col'>
                             <p className="mt-5  lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 450
@@ -32,7 +32,7 @@ const Projectnumbers = () => {
                 <div className='w-56 h-auto mt-2 mx-2'>
 
                     <div className="flex">
-                        <img src={crane} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
+                        <img src={crane} alt='' className="text-yellow-500 h-16 my-6 mx-2" />
                         <div className='flex flex-col'>
                             <p className="mt-5  lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 300
@@ -42,7 +42,7 @@ const Projectnumbers = () => {
                 </div>
                 <div className='w-56 h-auto mt-2 mx-2'>
                     <div className="flex">
-                        <img src={brush} alt='' className="text-yellow-500 h-14 my-6 mx-2" />
+                        <img src={brush} alt='' className="text-yellow-500 h-16 my-6 mx-2" />
                         <div className='flex flex-col'>
                             <p className="mt-5  lg:text-5xl text-2xl font-bold font-Montserrat cursor-pointer">
                                 100

@@ -15,8 +15,7 @@
   outline: var(--b) solid #0000;
   outline-offset: .6em;
   font-size: 16px;
-
-  border: 0;
+  font-weight: bold;
 
   user-select: none;
   -webkit-user-select: none;
@@ -39,6 +38,14 @@
 /* Navbar2 nav item  */
 .nav .item:hover {
   color: rgb(180, 140, 32);
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: rgb(180, 140, 32);
+  transition: color 0.4s ease;
+  cursor: pointer;
 }
 
 /* side bar */
@@ -125,7 +132,7 @@
 /* About company */
 
 .polygon-background-AboutCompany {
-  clip-path: polygon(0.53% 63.52%, 100% 15%, 100% 100%, 0.33% 100.23%);
+  clip-path: polygon(-0.3% 63.52%, 100% 15%, 100% 100%, -0.3% 100.23%);
   z-index: -1;
 }
 
