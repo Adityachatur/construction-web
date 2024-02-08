@@ -23,7 +23,7 @@ const Sidebar = ({ showSidebar, toggleSidebar }) => {
                         <div className='list-none space-y-4 mb-3 text-xl font-bold text-left'>
                             <li className='menu-item'><Link to={'/'} className={`nav-link  ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></li>
                             <li className='menu-item'><Link to={'/about'} className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></li>
-                            <li className='menu-item'>Services</li>
+                            <li className='menu-item'><Link to={'/service'} className={`${location.pathname === "/service" ? "active" : ""}`} style={{ color: location.pathname === "/service" ? "red" : "" }}>Services</Link></li>
                             <li className='menu-item'>Pages</li>
                             <li className='menu-item'>Projects</li>
                             <li className='menu-item'>Contact</li>

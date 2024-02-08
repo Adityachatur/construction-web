@@ -32,9 +32,9 @@ const Navbar2 = () => {
 
         {/* Navigation menu */}
         <div className={`menu-items nav md:flex md:flex-row text-white font-bold lg:text-lg sm:text-base space-x-5 ${showMenu ? 'text-base flex' : 'hidden'}`}>
-          <span className="item"><Link to={'/'} className={`nav-link  ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></span>
-          <span className="item"><Link to={'/about'} className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></span>
-          <span className="item">Service</span>
+          <span className="item"><Link to={'/'} className={` ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></span>
+          <span className="item"><Link to={'/about'} className={`${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></span>
+          <span className="item"><Link to={'/service'} className={`${location.pathname === "/service" ? "active" : ""}`} style={{ color: location.pathname === "/service" ? "red" : "" }}>Services</Link></span>
           <span className="item">Pages</span>
           <span className="item">Projects</span>
         </div>
