@@ -12,13 +12,13 @@ const Card = ({ img, title, content }) => {
 
     return (
         <div
-            className="w-96 mx-auto my-4 service-cardhover relative" style={{ height: "400px" }}
+            className="w-full mx-auto my-4 service-cardhover relative" style={{ height: "400px", width: "300px" }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             <img
                 src={img}
-                className="h-full py-5 mx-auto"
+                className="h-full py-5 mx-auto object-cover"
                 style={{ transform: isHovered ? 'scale(0.5)' : 'scale(1)' }}
                 alt=""
             />
@@ -46,13 +46,13 @@ const Projects = () => {
     return (
         <div>
             <Mainheading title="Projects" ThisPage="Project" img={img} />
-            <div className="container w-11/12  mx-auto  py-8">
-                <div className="w-full flex flex-col  my-10 md:flex-row flex-wrap justify-center">
+            <div className="container lg:w-11/12 w-full mx-auto py-8">
+                <div className="w-full flex flex-col my-10 md:flex-row flex-wrap justify-center">
                     <div className="w-full mx-auto">
                         <Heading about="OUR" company="SOLUTION" />
                         <div className="flex flex-wrap justify-between">
                             {cardsData.map((card, index) => (
-                                <div key={index} className=" lg:w-1/4 md:w-1/2  mb-4 mx-auto justify-center items-center">
+                                <div key={index} className="lg:w-1/4 md:w-1/2 mb-4 mx-auto justify-center items-center">
                                     <Card {...card} />
                                 </div>
                             ))}
@@ -62,7 +62,6 @@ const Projects = () => {
             </div>
             <Footer />
         </div>
-
     );
 };
 
