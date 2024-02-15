@@ -12,7 +12,7 @@ const Card = ({ img, title, content }) => {
 
     return (
         <div
-            className="w-96 h-96 border rounded-md shadow-md p-4 mx-4 my-4 service-cardhover relative"
+            className="w-96 h-96 border rounded-md shadow-md p-4 my-4 service-cardhover relative"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
