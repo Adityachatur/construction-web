@@ -59,7 +59,7 @@ const OurTeam = () => {
             <div className='w-full' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '450px', }}>
                 <div className='text-center my-5'>
                     <Heading about="Our" company="Team" />
-                    <h1 className='text-5xl font-bold pb-2'>Discover our trustworthy team and experts</h1> {/* Edited heading */}
+                    <h1 className='lg:text-5xl md:text-2xl text-3xl font-bold pb-2'>Discover our trustworthy team and experts</h1> {/* Edited heading */}
                 </div>
 
                 <div className='w-10/12 mx-auto'>

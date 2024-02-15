@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import Heading from '../Heading';
-import img1 from '../images/home1.jpg';
-import img2 from '../images/home3.jpg';
+import img1 from '../images/projectimg1.jpg';
+import img2 from '../images/projectimg2.jpg';
+import img3 from '../images/projectimg3.jpg'
+import img4 from '../images/projectimg4.jpg'
+import img5 from '../images/projectimg5.jpg'
+import img6 from '../images/projectimg6.jpg'
+import img7 from '../images/projectimg7.jpg'
+import img8 from '../images/projectimg8.jpg'
 import img from '../images/home4.jpg';
 import Footer from '../Footer/Footer';
 import Mainheading from '../Mainheading';
@@ -35,12 +41,14 @@ const Card = ({ img, title, content }) => {
 
 const Projects = () => {
     const cardsData = [
-        { img: img1, title: 'ASSISTANCE', content: 'Lorem Ipsum is simply dummy text of the printing and setting as Planning.' },
+        { img: img1, title: 'Life style building', content: 'Lorem Ipsum is simply dummy text of the printing and setting as Planning.' },
         { img: img2, title: 'FINANCING', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
-        { img: img1, title: 'ASSISTANCE', content: 'Lorem Ipsum is simply dummy text of the printing and setting as Planning.' },
-        { img: img2, title: 'FINANCING', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
-        { img: img1, title: 'ASSISTANCE', content: 'Lorem Ipsum is simply dummy text of the printing and setting as Planning.' },
-        { img: img2, title: 'FINANCING', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
+        { img: img3, title: 'Life style building', content: 'Lorem Ipsum is simply dummy text of the printing and setting as Planning.' },
+        { img: img4, title: 'Office Partition Wall', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
+        { img: img5, title: 'ASSISTANCE', content: 'Lorem Ipsum is simply dummy text of the printing and setting as Planning.' },
+        { img: img6, title: 'Art Family Residence', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
+        { img: img7, title: 'Life style building', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
+        { img: img8, title: 'Art Family Residence', content: 'Content for Card 2. Fusce et elit ac risus condimentum malesuada non sit amet purus.' },
     ];
 
     return (
