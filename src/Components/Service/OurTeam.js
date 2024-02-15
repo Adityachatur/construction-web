@@ -52,7 +52,6 @@ const OurTeam = () => {
 
     const slideInAnimation = {
         animation: 'slideIn 0.3s ease-in-out forwards',
-        height: '150px'
     };
 
     return (

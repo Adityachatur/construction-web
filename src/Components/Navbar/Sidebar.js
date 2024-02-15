@@ -24,8 +24,7 @@ const Sidebar = ({ showSidebar, toggleSidebar }) => {
                             <li className='menu-item'><Link to={'/'} className={`nav-link  ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></li>
                             <li className='menu-item'><Link to={'/about'} className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></li>
                             <li className='menu-item'><Link to={'/service'} className={`${location.pathname === "/service" ? "active" : ""}`} style={{ color: location.pathname === "/service" ? "red" : "" }}>Services</Link></li>
-                            <li className='menu-item'>Pages</li>
-                            <li className='menu-item'>Projects</li>
+                            <li className='menu-item'><Link to={'/project'} className={`${location.pathname === "/project" ? "active" : ""}`} style={{ color: location.pathname === "/project" ? "red" : "" }}>Projects</Link></li>
                             <li className='menu-item'>Contact</li>
                         </div>
                         <div className='sidebar-icon'>

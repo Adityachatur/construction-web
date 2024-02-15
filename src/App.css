@@ -261,11 +261,21 @@
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease;
+  transition: max-height 0.8s ease;
   /* Animation duration and easing */
 }
 
 .faq-answer.open {
   max-height: 500px;
   /* Adjust the maximum height as needed */
+}
+
+
+/* Projects */
+.service-cardhover img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.service-cardhover img.hidden {
+  opacity: 0;
 }

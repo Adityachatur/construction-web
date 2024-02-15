@@ -35,8 +35,7 @@ const Navbar2 = () => {
           <span className="item"><Link to={'/'} className={` ${location.pathname === "/" ? "active" : ""}`} style={{ color: location.pathname === "/" ? "red" : "" }}>Home</Link></span>
           <span className="item"><Link to={'/about'} className={`${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></span>
           <span className="item"><Link to={'/service'} className={`${location.pathname === "/service" ? "active" : ""}`} style={{ color: location.pathname === "/service" ? "red" : "" }}>Services</Link></span>
-          <span className="item">Pages</span>
-          <span className="item">Projects</span>
+          <span className="item"><Link to={'/project'} className={`${location.pathname === "/project" ? "active" : ""}`} style={{ color: location.pathname === "/project" ? "red" : "" }}>Projects</Link></span>
         </div>
 
         {/* Search and greater than icons */}

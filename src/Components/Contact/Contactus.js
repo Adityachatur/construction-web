@@ -33,7 +33,7 @@ const Contactus = () => {
                         </div>
                         <br />
 
-                        <button className='button w-40' style={{ color: "white" }}>Submit</button>
+                        <button className='button w-40 ' style={{ color: "white" }}>Submit</button>
                     </div>
                 </div>
 
