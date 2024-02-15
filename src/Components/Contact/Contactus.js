@@ -4,7 +4,7 @@ import contact from '../images/contact.png'
 const Contactus = () => {
     return (
         <div>
-            <div className='w-full my-5 py-10 bg-black flex flex-wrap'>
+            <div className='w-full py-10 bg-black flex flex-wrap'>
 
                 <div className='w-full md:w-1/2 bg-black flex flex-col justify-center md:justify-start md:pl-10'>
                     <h1 className='text-left p-5 text-3xl text-white font-bold lg:pl-28'>GET IN TOUCH</h1>

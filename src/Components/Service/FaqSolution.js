@@ -39,7 +39,7 @@ const FaqSolution = () => {
                     <Heading about="SOME" company="FAQ" />
                     {faqData.map((item, index) => (
                         <div key={index} className="faq-item">
-                            <div className="h-12 text-xl font-bold border-2 flex justify-between items-center px-5 mx-4">
+                            <div className="h-12 text-xl font-bold border-b-2 flex justify-between items-center px-5 mx-4">
                                 <h1>{item.question}</h1>
                                 <FontAwesomeIcon className="cursor-pointer" icon={item.isOpen ? faMinus : faPlus} onClick={() => toggleContent(index)} />
                             </div>

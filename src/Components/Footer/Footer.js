@@ -42,9 +42,9 @@ const Footer = () => {
                         <hr className='border-dashed' />
                         <li className='footer-list'><span><Link to={'/about'}>About</Link></span></li>
                         <hr className='border-dashed' />
-                        <li className='footer-list'><span>Contact</span></li>
+                        <li className='footer-list'><span><Link to={'/contact'}>Contact</Link></span></li>
                         <hr className='border-dashed' />
-                        <li className='footer-list'><span>Service</span></li>
+                        <li className='footer-list'><span><Link to={'/service'}>Service</Link></span></li>
                         <hr className='border-dashed' />
                     </div>
                 </div>

@@ -25,7 +25,7 @@ const Sidebar = ({ showSidebar, toggleSidebar }) => {
                             <li className='menu-item'><Link to={'/about'} className={`nav-link  ${location.pathname === "/about" ? "active" : ""}`} style={{ color: location.pathname === "/about" ? "red" : "" }}>About Us</Link></li>
                             <li className='menu-item'><Link to={'/service'} className={`${location.pathname === "/service" ? "active" : ""}`} style={{ color: location.pathname === "/service" ? "red" : "" }}>Services</Link></li>
                             <li className='menu-item'><Link to={'/project'} className={`${location.pathname === "/project" ? "active" : ""}`} style={{ color: location.pathname === "/project" ? "red" : "" }}>Projects</Link></li>
-                            <li className='menu-item'>Contact</li>
+                            <li className='menu-item'><Link to={'/contact'} className={`${location.pathname === "/contact" ? "active" : ""}`} style={{ color: location.pathname === "/contact" ? "red" : "" }}>Contact</Link></li>
                         </div>
                         <div className='sidebar-icon'>
                             <FontAwesomeIcon icon={faPhone} /> <br />
